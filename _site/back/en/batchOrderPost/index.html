@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en" class="language-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Submit batch order | FLOXYPAY DOC</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Submit batch order" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="/v4/batch-order" />
+<meta property="og:description" content="/v4/batch-order" />
+<link rel="canonical" href="http://localhost:4000/back/en/batchOrderPost/" />
+<meta property="og:url" content="http://localhost:4000/back/en/batchOrderPost/" />
+<meta property="og:site_name" content="FLOXYPAY DOC" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Submit batch order" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"/v4/batch-order","headline":"Submit batch order","url":"http://localhost:4000/back/en/batchOrderPost/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="icon" type="image/png" href="/favicon.ico">
+
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="/js/main.js"></script>
+	</head>
+	<body>
+
+	<header>
+		<h1>
+			<button type="button" class="open-nav" id="open-nav"></button>
+			<a href="/"><img src="/images/logo.svg" height="40" alt="FLOXYPAY DOC logo"></a>
+		</h1>
+
+		<form action="/search/" method="get">
+			<input type="text" name="q" id="search-input" placeholder="Search">
+			<input type="submit" value="Search" style="display: none;">
+		</form>
+		<div id="spot_sidebar">
+			<div class="sidebar_en"><div id="sidebar" class="sidebar">
+	
+	
+		
+	
+		
+		<section>
+			<h6>Access Description</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#documentationrestApi">
+						REST API
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationapiBasicInfo">
+						Basic information of the interface
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationlimitRules">
+						Frequency Limiting Rules
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationsignStatement">
+						Signature Instructions
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationsignSteps">
+						Signature generation
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationapplyApi">
+						API Key application steps
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationapiDemo">
+						API code library
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationreturnFormat">
+						response format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationerrorCode">
+						response code
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationpublicModule">
+						Public module
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentationFAQ">
+						FAQ
+						
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>Market</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#market1serverInfo">
+						Get server time
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market2symbol">
+						Get symbol information
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market3depth">
+						Get depth data
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market4kline">
+						Get K-line data
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market5tradeRecent">
+						Query the list of recent transactions
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market6tradeHistory">
+						Query historical transaction list
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market7allTicker">
+						Full ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market8tickerPrice">
+						Get latest prices ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market9tickerBook">
+						Get the best pending order ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market10ticker24h">
+						Get 24h statistics ticker
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>Order</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#orderorderGet">
+						Get single
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderorderGetQueryParam">
+						Query single
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderorderPost">
+						Submit order
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderorderDel">
+						Cancell order
+						<span class="endpoint delete"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderbatchOrderGet">
+						Get batch
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderbatchOrderDel">
+						Cancell batch order
+						<span class="endpoint delete"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderopenOrderGet">
+						Query the current pending order
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderopenOrderDel">
+						Cancel the current pending order
+						<span class="endpoint delete"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#orderhistoryOrderGet">
+						Query historical orders
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>Trade</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#tradetradeGet">
+						Query trade
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>Balance</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#balancecurrenciesGet">
+						Get currency information
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#balancebalanceGet">
+						Get a single currency asset
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#balancebalancesGet">
+						Get a list of currency assets
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>Deposit/Withdrawal</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawalsupportedCurrenciesGet">
+						Get information of currencies (available for deposit and withdraw)
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawaldepositAddressGet">
+						Get the deposit address
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawalhistoryDepositGet">
+						Get history records of deposit
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawalwithdraw">
+						Withdraw
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawalwithdrawHistory">
+						Withdrawal history
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>Transfer</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#transfertransferPost">
+						Transfer between user business systems
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#transfersubTransferPost">
+						Transfer between sub-account business systems
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>WEBSOCKET(public)</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicbase">
+						Base address
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicrequestFormat">
+						Request message format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicresponseFormat">
+						Response message format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicpushMessage">
+						Push message format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicheartBeat">
+						Heartbeat
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicsubscribeParam">
+						Subscription parameters
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicorderBook">
+						Orderbook manage
+						
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicdealRecord">
+						Trade record
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicsymbolKline">
+						K-line
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publiclimitDepth">
+						Limited depth
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicincreDepth">
+						Incremental depth
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publictickerRealTime">
+						ticker
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_publicallTicker">
+						All ticker
+						
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>WEBSOCKET(private)</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privatebase">
+						Base address
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privaterequestFormat">
+						Request message format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privateresponseFormat">
+						Response message format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privatepushMessage">
+						Push message format
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privategetToken">
+						Get token
+						<span class="endpoint post"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privatebalanceChange">
+						Change of balance
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				<li>
+					<a href="/#websocket_privateorderChange">
+						Change of order
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_privateorderDeal">
+						Order filled
+						
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+</div>
+</div>
+			<div class="sidebar_cn"><div id="sidebar" class="sidebar">
+	
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		<section>
+			<h6>接入说明</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnrestApi">
+						REST API
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnapiBasicInfo">
+						接口的基本信息
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnlimitRules">
+						限频规则
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnsignStatement">
+						签名说明
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnsignSteps">
+						签名生成
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnapplyApi">
+						API Key申请步骤
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnapiDemo">
+						API 代码库
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnreturnFormat">
+						响应格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnerrorCode">
+						响应代码
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnpublicModule">
+						公共模块
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#documentation_cnFAQ">
+						FAQ
+						
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>市场数据</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#market_cn1serverInfo">
+						获取服务器时间
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn2symbol">
+						获取交易对信息
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn3depth">
+						获取深度数据
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn4kline">
+						获取k线数据
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn5tradeRecent">
+						查询近期成交列表
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn6tradeHistory">
+						查询历史成交列表
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn7allTicker">
+						完整ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn8tickerPrice">
+						获取最新价格ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn9tickerBook">
+						获取最优挂单ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#market_cn10ticker24h">
+						获取24h统计ticker
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>订单</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#order_cnorderGet">
+						单笔获取
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnorderGetQueryParam">
+						单笔查询
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnorderPost">
+						单笔下单
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnorderDel">
+						单笔撤单
+						<span class="endpoint delete"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnbatchOrderGet">
+						批量获取
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnbatchOrderDel">
+						批量撤单
+						<span class="endpoint delete"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnopenOrderGet">
+						查询当前挂单
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnopenOrderDel">
+						撤销当前挂单
+						<span class="endpoint delete"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#order_cnhistoryOrderGet">
+						历史订单查询
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>成交</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#trade_cntradeGet">
+						成交查询
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>资产</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#balance_cncurrenciesGet">
+						获取币种信息
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#balance_cnbalanceGet">
+						获取单个币种资产
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#balance_cnbalancesGet">
+						获取币种资产列表
+						<span class="endpoint get"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>充值/提现</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawal_cnsupportedCurrenciesGet">
+						获取FLOXYPAY可充提的币种
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawal_cndepositAddressGet">
+						获取充值地址
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawal_cnhistoryDepositGet">
+						充值历史
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawal_cnwithdraw">
+						提现
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#deposit_withdrawal_cnwithdrawHistory">
+						提现历史
+						<span class="endpoint get"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>划转</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#transfer_cntransferPost">
+						用户业务系统间划转
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#transfer_cnsubTransferPost">
+						子账户业务系统间划转
+						<span class="endpoint post"></span>
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>WEBSOCKET(public)</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnbase">
+						基地址
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnrequestFormat">
+						请求报文格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnresponseFormat">
+						响应报文格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnpushMessage">
+						推送报文格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnheartBeat">
+						心跳
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnsubscribeParam">
+						订阅参数
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnorderBook">
+						Orderbook 维护
+						
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cndealRecord">
+						成交记录
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnsymbolKline">
+						K线
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnlimitDepth">
+						有限深度
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnincreDepth">
+						增量深度
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cntickerRealTime">
+						ticker
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_public_cnallTicker">
+						所有ticker
+						
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+		
+		<section>
+			<h6>WEBSOCKET(private)</h6>
+			<ul>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnbase">
+						基地址
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnrequestFormat">
+						请求报文格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnresponseFormat">
+						响应报⽂格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnpushMessage">
+						推送报⽂格式
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cngetToken">
+						获取token接口
+						<span class="endpoint post"></span>
+						
+						<p class="line" style=" border-bottom: #e1e1e1 1px solid;width: 95%; margin: 5px 0;"></p>
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnbalanceChange">
+						余额变动
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnorderChange">
+						订单变动
+						
+						
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="/#websocket_private_cnorderDeal">
+						订单成交
+						
+						
+					</a>
+				</li>
+				
+				
+			</ul>
+		</section>
+		
+	
+</div>
+</div>
+		</div>
+	</header>
+
+		<div class="main">
+			<div class="i18nHead">
+        <div class="i18nButton" id="cn">简体中文</div>
+				<div class="i18nButton" id="en">english</div>
+			</div>
+			<div class="trade-type-select" id="trade_type_en">
+				<a style="cursor:pointer;" class="active-type show_spot" >Spot</a>
+			</div>
+			<div class="trade-type-select" id="trade_type_cn">
+				<a style="cursor:pointer;" class="active-type show_spot">现货</a>
+			</div>
+      <div id="content" style="margin-top: 40px;">
+			    
+
+      </div>
+		</div>
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+
+			//默认显示语言
+			window.lang = "en";
+			//默认展示模块
+			var model = "spot";
+			//所有模块数组
+			var models = new Array("spot");
+
+			var query = window.location.toString();
+			//有锚点定位
+			if(query.indexOf("#")>0){
+				var anchorPoint = query.split("#")[1];
+
+				for(var md in models){
+					var modelName = models[md];
+					if(anchorPoint.indexOf(modelName+"_")==0){
+						model= modelName;
+						if(anchorPoint.indexOf("_cn")>0){
+							window.lang = "cn";
+						}else {
+							window.lang = "en";
+						}
+					}
+				}
+			}
+			//根据当前url地址，显示对应的模块
+			showModel(model);
+
+			if(window.lang=="en"){
+				showEN();
+			}else {
+				showCN();
+			}
+
+			//根据模块名控制tag的显示和隐藏
+			function showModel(model){
+				for(var md in models){
+					var modelName = models[md];
+					if(modelName==model){
+						$("#"+modelName+"_content").show();
+						$("#"+modelName+"_search").show();
+						$("#"+modelName+"_sidebar").show();
+						$(".show_"+modelName).addClass("active-type");
+					}else {
+						$("#"+modelName+"_content").hide();
+						$("#"+modelName+"_search").hide();
+						$("#"+modelName+"_sidebar").hide();
+						$(".show_"+modelName).removeClass("active-type");
+					}
+				}
+			}
+
+			//展示中文
+			function showCN(){
+				window.lang = "cn";
+				$("#en").show();
+				$("#cn").hide();
+				$(".sidebar_cn").show();
+				$(".sidebar_en").hide();
+				$(".index_cn").show();
+				$(".index_en").hide();
+				$("#trade_type_cn").show();
+				$("#trade_type_en").hide();
+			}
+
+			//展示英文
+			function showEN(){
+				window.lang = "en";
+				$("#cn").show();
+				$("#en").hide();
+				$(".sidebar_en").show();
+				$(".sidebar_cn").hide();
+				$(".index_en").show();
+				$(".index_cn").hide();
+				$("#trade_type_en").show();
+				$("#trade_type_cn").hide();
+			}
+
+			//点击不同的tag显示对应的内容
+			for(var md in models){
+				var modelName = models[md];
+				$(".show_"+modelName).click(function (){
+					var model = $(this).attr('class').replace("active-type","").replace("show_","").trim();
+					showModel(model);
+				});
+			}
+
+			$("#cn").click(function () {
+				showCN();
+			})
+
+			$("#en").click(function () {
+				showEN();
+			})
+        </script>
+	</body>
+</html>
